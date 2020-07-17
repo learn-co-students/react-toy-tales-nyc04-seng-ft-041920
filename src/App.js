@@ -23,7 +23,7 @@ class App extends React.Component{
 
   render(){
     return (
-      <>
+      <div>
         <Header/>
         { this.state.display
             ?
@@ -34,8 +34,8 @@ class App extends React.Component{
         <div className="buttonContainer">
           <button onClick={this.handleClick}> Add a Toy </button>
         </div>
-        <ToyContainer/>
-      </>
+        <ToyContainer toys={data}/>
+      </div>
     );
   }
 
