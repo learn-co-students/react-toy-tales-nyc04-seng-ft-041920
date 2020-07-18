@@ -73,23 +73,6 @@ class App extends React.Component{
         this.setState({toys: toysArray})
       })
     })
-
-//     likesSpan.innerText = likes + 1
-// fetch(`http://localhost:3000/toys/${toy.id}`,
-//   {
-//     method: "PATCH",
-//     body: JSON.stringify({"likes" : likes + 1}),
-//     headers: {
-//       "Content-Type": "application/json",
-//       Accept: "application/json"
-//     }
-//   }
-// )
-// .then(resp => resp.json())
-// .then(toy => {
-//    console.log(toy.likes)
-// })
-
   }
 
   render() {
