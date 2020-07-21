@@ -1,10 +1,20 @@
 import React from 'react';
 import ToyCard from './ToyCard'
 
-const ToyContainer = () => {
+const ToyContainer = (props) => {
+
+  // const testComponent = () => {
+  //   console.log("TOYCONTAINER: ", props)
+  // }
+
+  const renderToys = () => {
+    return props.toys.map(toy => <ToyCard key={toy.id} toy={toy} /> )
+  }
+
   return(
     <div id="toy-collection">
-      {/* Render the collection of ToyCards */}
+      {renderToys()}
+
     </div>
   );
 }
